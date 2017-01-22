@@ -1,0 +1,100 @@
+@mixin button-with-overline($color) {
+  width: 165px;
+  height: 65px;
+  padding: 0;
+  padding-top: 5px;
+  border-radius: 4px;
+  background-color: #fff;
+
+  a {
+    display: block;
+    width: 100%;
+    height: 60px;
+    background-color: $color;
+    border-radius: 4px;
+    color: #fff;
+    line-height: 61px;
+    font-size: 13px;
+    text-align: center;
+
+    &:hover {
+      background-color: lighten($color, 20%);
+      transition: 0.2s;
+    }
+  }
+}
+
+
+@mixin option-column() {
+  @include flexbox;
+  width: 25%;
+  height: 377px;
+  border-top: 7px solid;
+}
+
+@mixin option-column-colors($bg-color) {
+    background-color: $bg-color;
+  @if $bg-color == $color-green-blue {
+    border-color: #fff;
+    color: #fff;
+  } @else {
+    border-color: $color-green-blue;
+    color: $color-green-blue;
+  }
+}
+
+@mixin fun-fact-column-colors($bg-color) {
+    background-color: $bg-color;
+  @if $bg-color == $color-green-blue {
+    border-color: #25333c;
+
+    p {
+      color: #25333c;
+    }
+
+    .icon-wrapper {
+      border: 2px solid #25333c;
+
+      span {
+        background-color: #25333c;
+      }
+    }
+  } @else {
+    border-color: $color-green-blue;
+
+    p {
+      color: $color-green-blue;
+    }
+
+    .icon-wrapper {
+      border: 2px solid $color-green-blue;
+
+      span {
+        background-color: $color-green-blue;
+      }
+    }
+  }
+}
+
+@mixin flexbox {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+@mixin placeholder-hide {
+  &:focus::-webkit-input-placeholder {
+    color:transparent;
+  }
+  &:focus:-moz-placeholder {
+    color:transparent;
+  }
+  &:focus::-moz-placeholder {
+    color:transparent;
+  }
+  &:focus:-ms-input-placeholder {
+    color:transparent;
+  }
+}
