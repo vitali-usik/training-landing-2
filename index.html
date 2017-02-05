@@ -13,16 +13,16 @@
           <a href="#"></a>
         </div>
         <nav>
-          <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">SKILLS</a></li>
-            <li><a href="#">SERVICE</a></li>
-            <li><a href="#">WORK</a></li>
-            <li><a href="#">TESTIMONIAL</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#">TEAM</a></li>
-            <li><a href="#">CONTACT</a></li>
+          <ul id="nav-list">
+            <li><a href="#" class="nav-link">HOME</a></li>
+            <li><a href="#about" class="nav-link">ABOUT</a></li>
+            <li><a href="#skills" class="nav-link">SKILLS</a></li>
+            <li><a href="#service" class="nav-link">SERVICE</a></li>
+            <li><a href="#work" class="nav-link">WORK</a></li>
+            <li><a href="#testimonial" class="nav-link">TESTIMONIAL</a></li>
+            <li><a href="#blog" class="nav-link">BLOG</a></li>
+            <li><a href="#team" class="nav-link">TEAM</a></li>
+            <li><a href="#contact" class="nav-link">CONTACT</a></li>
           </ul>
           <div class="search">
           </div>
@@ -99,7 +99,7 @@
         </ul>
       </div>
     </div>
-    <div class="about-company">
+    <div class="about-company" id="about">
       <div class="container">
         <div class="content">
           <div class="title">
@@ -112,9 +112,9 @@
               <li><a href="#">OUR SKILLS</a></li>
             </ul>  
           </div>
-          <div class="skills">
+          <div class="skills" id="skills">
             <ul>
-              <li>#
+              <li>
                 <span>USER INTERFACE</span>
               </li>
               <li>
@@ -134,7 +134,7 @@
         </div>
       </div>
     </div>
-    <div class="our-work">
+    <div class="our-work" id="work">
       <div class="container">
         <div class="title">
           <h3>OUR AMAZING WORK</h3>
@@ -319,7 +319,7 @@
         <button class="load-more">LOAD MORE</button>
       </div>
     </div>
-    <div class="our-services">
+    <div class="our-services" id="service">
       <div class="container">
         <div class="title">
           <h3>Our Services</h3>
@@ -359,7 +359,7 @@
         </div>
       </div>  
     </div>
-    <div class="breaking-news">
+    <div class="breaking-news" id="blog">
       <div class="container">
         <div class="title">
           <h3>Breaking News</h3>
@@ -557,7 +557,7 @@
         </ul>
       </div>
     </div>
-    <div class="client-feedback">
+    <div class="client-feedback" id="testimonial">
       <div class="container">
         <div class="title">
           <h3>What People Say About theHam</h3>
@@ -571,7 +571,7 @@
             </div>
           </div>
           <div class="slider">
-            <div id="left-arrow"><</div>
+            <div id="left-arrow">&#60</div>
             <div class="mini-author-photo">
               <div class="mini-author-photo-wrapper"></div>
             </div>
@@ -584,12 +584,12 @@
             <div class="mini-author-photo">
               <div class="mini-author-photo-wrapper"></div>
             </div>
-            <div id="right-arrow">></div>
+            <div id="right-arrow">&#62</div>
           </div>
         </div>
       </div>
     </div>
-    <div class="our-team">
+    <div class="our-team" id="team">
       <div class="container">
         <div class="title">
           <h3>Meet Our Team</h3>
@@ -670,7 +670,7 @@
         </div>
       </div>
     </div>
-    <div class="contact">
+    <div id="contact">
       <div class="container">
         <div class="form-wrapper">
           <div class="title">
@@ -762,5 +762,7 @@
       </div>
     </div>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

@@ -55,7 +55,8 @@ nav {
         font-weight: 700;
         color: #fff;
 
-        &:hover {
+        &:hover,
+        &.nav-active {
           color: $color-green-blue;
           transition: 0.2s;
 
@@ -1211,7 +1212,7 @@ nav {
   }
 }
 
-.contact {
+#contact {
   padding: 100px 0;
 
   .container {
